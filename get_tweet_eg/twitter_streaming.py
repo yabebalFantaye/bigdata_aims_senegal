@@ -4,6 +4,8 @@ from tweepy import OAuthHandler
 from tweepy import Stream
 #import argparse
 import sys
+import os
+
 
 print 'code name is: ',sys.argv[0]
 
@@ -29,8 +31,7 @@ print 'TweetKeywords are: ',TweetKeyword
 consumer_key = os.environ.get('TWITTER_API_KEY')
 consumer_secret =os.environ.get('TWITTER_API_SECRET')
 access_token = os.environ.get('TWITTER_ACCESS_TOKEN')
-access_token_secret = os.environ.get('TWITTER_ACESS_TOKEN_SECRET')
-
+access_token_secret = os.environ.get('TWITTER_ACCESS_TOKEN_SECRET')
 
 
 #This is a basic listener that just prints received tweets to stdout.
