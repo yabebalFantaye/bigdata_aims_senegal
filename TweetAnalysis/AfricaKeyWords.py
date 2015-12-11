@@ -1,5 +1,5 @@
 
-%matplotlib inline
+#%matplotlib inline
 import numpy as np
 import json
 import pandas as pd
@@ -18,8 +18,9 @@ for line in tweets_file:
         continue
         
 
-
-
+print 'before issuing exit'
+exit(0)
+print 'after issuing exit'
 
 def get_tweet_text(tweet):
     #print tweet['text']
